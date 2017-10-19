@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Function Exercise</title>
+  </head>
+  <body>
+    <h1>JS Functions - See Console for Output</h1>
+    <script>
+
+        const get_square = a => a*a;
+
+        console.log(get_square(9));
+
+        //let letter_grade; //global variable or block? GLOBAL BC OUTSIDE CURLY BRACKETS
+        get_letter_grade = (grade) => {
+          let letter_grade; //BLOCK VARIABLE BC ONLY EXISTS IN CURLY BRACKETS, AND CANT BE CALLED OUTSIDE THE FUNCTION
+          if (grade >= 90) {
+            letter_grade = "A";
+          }
+          else if (grade >=80){
+            letter_grade = "B";
+          }
+          else {
+            letter_grade = "C";
+          }
+          return letter_grade;
+        }
+
+      console.log(get_letter_grade(90));
+        //console.log(letter_grade); //THIS WOULD GIVE YOU AN ERROR W. A BLOCK VAR
+    </script>
+  </body>
+</html>
