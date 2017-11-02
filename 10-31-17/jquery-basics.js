@@ -6,9 +6,9 @@ function main () {
   $("#google").html("Goooogle");
   //let links = document.getElementsByClassName("my-link");
   let links = $('.my-link');
-  links[0].innerHTML = "Twitter";
-  links[0].href = "http://www.twitter.com";
-  links[1].innerHTML = "LinkedIn";
+  links[0].innerHTML= "Twitter";
+  links[0].href= "http://www.twitter.com";
+  links[1].innerHTML= "LinkedIn";
   links[1].href = "http://www.linkedin.com";
   links[1].style.color = "red";
 
